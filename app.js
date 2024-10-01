@@ -28,7 +28,6 @@ function register(){
         alert("email is required")
     }else{
         users.push({username , email , password});
-        console.log(users)
         alert("register successful");
         toggleForm();
     }
