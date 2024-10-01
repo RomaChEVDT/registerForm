@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="register">
+                <form>
+                    <h2>Register</h2>
+                    <div class="form-field">
+                        <label for="username">Enter your Username</label>
+                        <input id="username" type="text" required>
+                    </div><br>
+        
+                    <div class="form-field">
+                        <label for="email">Enter your Email</label>
+                        <input id="email" type="email" required>
+                    </div><br>
+                    <div class="form-field">
+                        <label for="password">Enter your password</label>
+                        <input id="password" type="password" required>
+                    </div><br>
+                    <button onclick="register()">Submit</button>
+    
+                    <p>Already have account ?
+                        <a href="#" onclick="toggleForm()">login here</a>
+                    </p>
+                </form>
+            </div>
+    
+            <div class="login" style="display: none;">
+                <form>
+                    <h2>Sign-in</h2>
+                    <div class="form-field">
+                        <label for="loginEmail">Enter your Email</label>
+                        <input id="loginEmail" type="email" required>
+                    </div><br>
+                    <div class="form-field">
+                        <label for="loginPassword">Enter your password</label>
+                        <input id="loginPassword" type="password" required>
+                    </div><br>
+                    <button onclick="login()">Submit</button>
+    
+                    <p>Create new account
+                        <a href="#" onclick="toggleForm()">sign-up</a>
+                    </p>
+                </form>
+            </div>
+    
+            <div class="home" style="display: none;">
+                <h2>Welcome to home page</h2>
+                <p id="hello"></p>
+            </div>
+    
+        </div>    
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
