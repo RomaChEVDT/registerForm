@@ -28,8 +28,8 @@ function register(){
         alert("email is required")
     }else{
         users.push({username , email , password});
-        alert("register successful");
         toggleForm();
+        alert("register successful");
     }
 
      
